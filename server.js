@@ -56,8 +56,6 @@ const server = app.listen(PORT, console.log(`server is started at ${PORT}`));
 //*adding socket io to our server for real timing chatting
 
 const io = require('socket.io')(server, {
-
-
     pingTimeout: 600000,
     cors: {
         origin: 'http://localhost:3000',
